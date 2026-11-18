@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ef2b2d">
+<meta name="description" content="Pythonの繰り返しを復習する50分の自習課題。for・range・randomを使ってサイコロチャレンジを作ろう。">
+<title>繰り返しを復習しよう！｜Python コーディング自習課題</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+<script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+<header class="site-header"><div class="site-header__inner"><div class="brand" aria-label="プログラミング自習課題"><span class="brand__mark" aria-hidden="true">P</span><span><strong>プログラミング 自習課題</strong><small>オンライン教室</small></span></div><nav class="main-nav" aria-label="ページメニュー"><a class="nav-button" href="https://nonakagw.github.io/python-lesson4-site/" target="_blank" rel="noopener noreferrer">授業資料</a><a class="nav-button is-active" href="#main" aria-current="page">コーディング課題</a></nav></div></header>
+<main id="main" class="page-shell">
+<section class="intro" aria-labelledby="page-title">
+  <p class="eyebrow">PYTHON · SELF STUDY</p>
+  <h1 id="page-title">繰り返しを<span>使いこなそう！</span></h1>
+  <p class="lead">授業で学んだ <code>for</code>・<code>range()</code>・<code>random</code> を復習しよう。<br class="desktop-break">1問ずつ自分でコードを書いて、実行してみよう！</p>
+  <div class="intro-pills" aria-label="自習課題の概要"><span>時間の目安 <strong>50分</strong></span><span>基本問題 <strong>3問</strong></span><span>演習問題 <strong>1問</strong></span><span>チャレンジ <strong>2問</strong></span></div>
+  <div class="start-actions"><a class="button button--primary" href="#q1">問題①から始める <span aria-hidden="true">→</span></a><a class="button button--secondary" href="https://tech-nexus.jp" target="_blank" rel="noopener noreferrer">TechNexusを開く <span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="guide-bar" aria-label="今回のゴールと進め方">
+  <div class="goal-copy"><span class="goal-label">今日のゴール</span><p><strong>forとrangeを使って、決まった回数だけ処理を繰り返せるようになろう。</strong></p><p>まずは基本問題①〜③ができればOK。余裕がある人は演習やチャレンジへ進もう！</p></div>
+  <div class="steps-mini" aria-label="学習の流れ"><span>考える</span><b>→</b><span>書く</span><b>→</b><span>実行</span><b>→</b><span>直す</span></div>
+</section>
+<div class="learning-layout"><div class="main-column">
+<section class="review section-card" id="review" aria-labelledby="review-title">
+  <div class="section-label">REVIEW</div><h2 id="review-title">最初に、繰り返しの復習</h2><p class="quiet">書き方を忘れていたら、ここを見返してOK！</p>
+  <div class="reference-grid">
+    <div><code>for</code><span>決まった回数だけ繰り返す</span></div>
+    <div><code>range(5)</code><span>0〜4までの5つの数字</span></div>
+    <div><code>i</code><span>繰り返すたびに値が変わる変数</span></div>
+    <div><code>i + 1</code><span>1回目、2回目…と数えるときに使える</span></div>
+    <div><code>if number &gt;= 5:</code><span>数字が5以上なら</span></div>
+    <div><code>while</code><span>条件が成立している間、繰り返す（発展）</span></div>
+    <div class="reference-wide"><code>random.randint(1, 6)</code><span>1〜6の整数をランダムに1つ選ぶ</span></div>
+  </div>
+  <p class="review-note"><strong>繰り返しを書くときはインデントも忘れずに！</strong> <a href="https://nonakagw.github.io/python-lesson4-site/" target="_blank" rel="noopener noreferrer">繰り返しの授業資料</a>も見返せるよ。</p>
+</section>
+<section id="basic" class="section-start" aria-labelledby="basic-title"><p class="eyebrow">BASIC / 基本問題</p><h2 id="basic-title">ここからは、自分で書いてみよう</h2><p>コードを書くのはTechNexus。ここには問題文・出力例・ヒントを載せているよ。</p></section>
+<article class="problem" id="q1" data-problem="q1" aria-labelledby="q1-title"><header class="problem__header"><span class="number-box">01</span><div><p class="problem__type">基本問題 · for / range</p><h3 id="q1-title">同じ文章を5回表示しよう</h3></div><span class="time-chip">約5分</span></header><div class="problem__body"><p class="task-lead"><code>for</code> と <code>range()</code> を使って、「Pythonがんばるぞ！」を<strong>5回</strong>表示しよう。</p><div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li><code>for</code> と <code>range()</code> を使う</li><li>「Pythonがんばるぞ！」を5回表示する</li><li><code>print()</code> を5行並べるのではなく、繰り返しを使う</li></ol></div><div class="sample"><span class="sample__label">出力例</span><pre><code>Pythonがんばるぞ！
+Pythonがんばるぞ！
+Pythonがんばるぞ！
+Pythonがんばるぞ！
+Pythonがんばるぞ！</code></pre></div><div class="try-box"><span class="try-box__title">できたら試そう</span><p><code>range(5)</code> を <code>range(3)</code> に変えると、表示は何回になるかな？</p></div><div class="hints"><details><summary>ヒント①　繰り返しの形を思い出そう</summary><p><code>for i in range(5):</code> の次の行に、繰り返したい処理を書こう。中の処理は右にずらして書く（インデント）よ。</p></details><details><summary>ヒント②　printはどこに書けばいい？</summary><pre><code>for i in range(5):
+    print("Pythonがんばるぞ！")</code></pre><p>同じ文章が5回表示されるか実行して確かめよう。</p></details></div></div><footer class="problem__footer"><label class="complete"><input type="checkbox" data-complete="q1"><span>動かせた！</span></label><a class="next-link" href="#q2">次は問題②へ <span aria-hidden="true">→</span></a></footer></article>
+<article class="problem" id="q2" data-problem="q2" aria-labelledby="q2-title"><header class="problem__header"><span class="number-box">02</span><div><p class="problem__type">基本問題 · for / 変数</p><h3 id="q2-title">1から10まで数えよう</h3></div><span class="time-chip">約7分</span></header><div class="problem__body"><p class="task-lead">繰り返しを使って、<strong>1から10まで</strong>の数字を順番に表示しよう。</p><div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li><code>for</code> と <code>range()</code> を使う</li><li>1〜10までの数字を、1行に1つずつ表示する</li><li><code>print(1)</code>、<code>print(2)</code>…と10行書く方法は使わない</li></ol></div><div class="sample"><span class="sample__label">出力例</span><pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+10</code></pre></div><div class="try-box"><span class="try-box__title">できたら試そう</span><p><code>range(10)</code> を <code>range(5)</code> に変更すると、どうなるかな？</p></div><div class="hints"><details><summary>ヒント①　iは何から始まる？</summary><p><code>range(10)</code> の <code>i</code> は <strong>0から9まで</strong>変わるよ。1から表示したいときは、どうすればいいかな？</p></details><details><summary>ヒント②　1を足して表示しよう</summary><pre><code>for i in range(10):
+    print(i + 1)</code></pre><p><code>i + 1</code> を表示すると、1から10までになる。</p></details></div></div><footer class="problem__footer"><label class="complete"><input type="checkbox" data-complete="q2"><span>動かせた！</span></label><a class="next-link" href="#q3">次は問題③へ <span aria-hidden="true">→</span></a></footer></article>
+<article class="problem problem--final" id="q3" data-problem="q3" aria-labelledby="q3-title"><header class="problem__header"><span class="number-box">03</span><div><p class="problem__type">基本問題 · for / random</p><h3 id="q3-title">サイコロを3回振ろう</h3></div><span class="time-chip">約10分</span></header><div class="problem__body"><p class="task-lead"><code>random</code> と繰り返しを組み合わせて、サイコロを<strong>3回</strong>振るプログラムを作ろう。</p><div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li><code>random.randint(1, 6)</code> で1〜6の数字を選ぶ</li><li><code>for</code> を使って3回繰り返す</li><li>「1回目：3」のように、何回目かと出た数字を表示する</li></ol></div><div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>1回目：3
+2回目：6
+3回目：2</code></pre><small>※数字は毎回変わるよ。</small></div><div class="try-box"><span class="try-box__title">できたら試そう</span><p>もう一度実行してみよう。1〜6の中で、さっきとは違う数字が出たかな？</p></div><div class="hints"><details><summary>スタート用コードを見る（必要な人だけ）</summary><p>ここから始めてもOK。続きを自分で書いてみよう！</p><div class="code-with-action"><pre><code id="starter-q3">import random
+
+number = random.randint(1, 6)
+print(number)</code></pre><button class="copy-button" type="button" data-copy="starter-q3">コードをコピー</button></div></details><details><summary>ヒント①　何を繰り返す？</summary><p><code>for i in range(3):</code> の内側で <code>number = random.randint(1, 6)</code> を実行しよう。</p></details><details><summary>ヒント②　「何回目」と表示するには？</summary><p><code>i</code> は0から始まるので、<code>i + 1</code> を使おう。</p><pre><code>print(f"{i + 1}回目：{number}")</code></pre><p><code>import random</code> を一番上に書くことも忘れずに。</p></details></div></div><footer class="problem__footer"><label class="complete"><input type="checkbox" data-complete="q3"><span>動かせた！</span></label><a class="next-link" href="#goal">今日のゴールへ <span aria-hidden="true">→</span></a></footer></article>
+<section class="goal-complete" id="goal" aria-labelledby="goal-title"><div class="goal-icon" aria-hidden="true">✓</div><div><p class="eyebrow">GOAL</p><h2 id="goal-title">基本3問ができれば、今日の目標達成！</h2><p>ここまでできたらOK！ 余裕がある人は、条件分岐も組み合わせてサイコロチャレンジを作ってみよう。</p><a href="#practice" class="button button--secondary">演習問題を見る ↓</a></div></section>
+<section class="section-start challenges-title" id="practice" aria-labelledby="practice-title"><p class="eyebrow">PRACTICE / 演習問題</p><h2 id="practice-title">今までの知識を組み合わせよう！</h2><p>練習問題③のコードを改造すればOK。自分で考えて、少しずつ付け足そう。</p></section>
+<article class="problem" id="q4" data-problem="q4" aria-labelledby="q4-title"><header class="problem__header"><span class="number-box">04</span><div><p class="problem__type">演習問題 · for × if × random</p><h3 id="q4-title">サイコロチャレンジを作ろう！</h3></div><span class="time-chip">約15分</span></header><div class="problem__body"><p class="task-lead">問題③を改造して、<strong>繰り返し × 条件分岐</strong>のゲームを作ろう！</p><div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li>サイコロを<strong>5回</strong>振る</li><li>出た数字が<strong>5以上</strong>なら「成功！」と表示する</li><li>それ以外なら「失敗…」と表示する</li><li>何回目かと、サイコロの数字も表示する</li></ol></div><div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>1回目：3
+失敗…
+2回目：5
+成功！
+3回目：1
+失敗…
+4回目：6
+成功！
+5回目：2
+失敗…</code></pre><small>※数字は毎回変わるよ。結果を表示する形が少し違っても、5回の成功・失敗が分かればOK！</small></div><div class="try-box"><span class="try-box__title">できたら試そう</span><p><code>range(5)</code> を <code>range(10)</code> に変えると、10回チャレンジになるかな？</p></div><div class="hints"><details><summary>スタート用コードを見る（必要な人だけ）</summary><p>ここから始めてもOK。続きを自分で書いてみよう！</p><div class="code-with-action"><pre><code id="starter-q4">import random
+
+for i in range(5):
+    number = random.randint(1, 6)
+    print(f&quot;{i + 1}回目：{number}&quot;)
+
+    # ここに条件分岐を書こう</code></pre><button class="copy-button" type="button" data-copy="starter-q4">コードをコピー</button></div></details><details><summary>ヒント①　条件分岐はどこに書く？</summary><p>サイコロを振って数字を表示した<strong>あと</strong>に、<code>if</code> と <code>else</code> を書こう。<code>if</code> は <code>for</code> の内側に入るよ。</p></details><details><summary>ヒント②　「5以上」はどう書く？</summary><pre><code>if number >= 5:
+    print("成功！")
+else:
+    print("失敗…")</code></pre><p><code>>=</code> は「以上」という意味。<code>and</code> や <code>or</code> は使わなくてOK！</p></details></div></div><footer class="problem__footer"><label class="complete"><input type="checkbox" data-complete="q4"><span>動かせた！</span></label><a class="next-link" href="#challenge">チャレンジ問題へ <span aria-hidden="true">→</span></a></footer></article>
+<section class="section-start challenges-title" id="challenge" aria-labelledby="challenge-title"><p class="eyebrow">CHALLENGE / 早く終わった人向け</p><h2 id="challenge-title">もっと作ってみよう！</h2><p>全部解く必要はないよ。気になったものを1つ選んで挑戦してみよう。</p></section>
+<article class="problem challenge-card" id="c1" data-problem="c1" aria-labelledby="c1-title"><header class="problem__header"><span class="number-box number-box--challenge">A</span><div><p class="problem__type">CHALLENGE ①</p><h3 id="c1-title">成功した回数を数えよう</h3></div></header><div class="problem__body"><p class="task-lead">サイコロチャレンジを改造して、<strong>成功した回数</strong>を最後に表示しよう。</p><div class="task-instructions"><h4>条件</h4><ol><li>サイコロを5回振り、5以上のときだけ成功回数を増やす</li><li>成功した回数を変数 <code>count</code> に記録する</li><li>最後に「5回中、2回成功しました！」のように表示する</li></ol></div><div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>1回目：3
+失敗…
+2回目：5
+成功！
+3回目：1
+失敗…
+4回目：6
+成功！
+5回目：2
+失敗…
+5回中、2回成功しました！</code></pre><small>※数字も成功回数も毎回変わるよ。</small></div><div class="try-box"><span class="try-box__title">できたら試そう</span><p>サイコロを10回振って、10回中の成功回数も数えてみよう。</p></div><div class="hints"><details><summary>ヒント①　数える変数を準備</summary><p>繰り返しの前に <code>count = 0</code> を書こう。最初の成功回数は0回だね。</p></details><details><summary>ヒント②　いつ数を増やせばいい？</summary><p>成功したときだけ <code>count = count + 1</code> と書こう。最後の回数表示は <code>for</code> の<strong>外側</strong>に書くよ。</p></details></div></div><footer class="problem__footer"><label class="complete"><input type="checkbox" data-complete="c1"><span>できた！</span></label><a class="next-link" href="#c2">次のチャレンジへ <span aria-hidden="true">→</span></a></footer></article>
+<article class="problem challenge-card" id="c2" data-problem="c2" aria-labelledby="c2-title"><header class="problem__header"><span class="number-box number-box--challenge">B</span><div><p class="problem__type">CHALLENGE ②</p><h3 id="c2-title">6が出るまで振り続けよう</h3></div></header><div class="problem__body"><p class="task-lead">今度は、何回振るか決めずに<strong>6が出るまで</strong>サイコロを振り続けてみよう。</p><div class="task-instructions"><h4>条件</h4><ol><li><code>while</code> を使って、6が出るまで繰り返す</li><li>「何回目：出た数字」を表示する</li><li>6が出たら終了して、何回で6が出たか表示する</li></ol></div><div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>1回目：4
+2回目：1
+3回目：5
+4回目：6
+4回で6が出ました！</code></pre><small>※6が出るまでの回数は毎回違うよ。</small></div><div class="try-box"><span class="try-box__title">できたら試そう</span><p>出るまで振る数字を6から1に変えることはできるかな？</p></div><div class="hints"><details><summary>ヒント①　whileの条件を思い出そう</summary><p><code>while number != 6:</code> は「<code>number</code> が6ではない間、繰り返す」という意味だよ。</p></details><details><summary>ヒント②　最初の準備は？</summary><p>繰り返す前に <code>number = 0</code> と <code>count = 0</code> を作ろう。<code>while</code> の中で数字を選び、回数を1増やすよ。</p></details></div></div><footer class="problem__footer"><label class="complete"><input type="checkbox" data-complete="c2"><span>できた！</span></label><a class="next-link" href="#help">困ったときは <span aria-hidden="true">→</span></a></footer></article>
+<section class="help-section section-card" id="help" aria-labelledby="help-title"><div class="section-label">SUPPORT</div><h2 id="help-title">困ったときは</h2><p>まずは自分で考えて、実行して、結果やエラーを確認しよう。それでも分からなければTechNexusのAIサポートに質問してみよう。</p><div class="help-grid"><div><strong>エラーが出たら</strong><p>「このエラーの意味を教えて」</p></div><div><strong>うまく動かないとき</strong><p>「どこが間違っているか、ヒントがほしい」</p></div><div><strong>答えが分からないとき</strong><p>「答えを全部教えずに、最初の一歩を教えて」</p></div></div></section></div>
+<aside class="sidebar" aria-label="学習の進み具合と目次">
+  <section class="progress-card" aria-labelledby="progress-title"><p class="eyebrow">YOUR PROGRESS</p><h2 id="progress-title">基本問題の進み具合</h2><div class="progress-count"><strong id="basicCount">0</strong><span> / 3問</span></div><div class="progress-track" role="progressbar" id="progressBar" aria-label="基本問題の進捗" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><span id="progressFill"></span></div><p class="progress-message" id="progressMessage">1問ずつ、できたらチェックを入れよう！</p><p class="progress-note">※チェックは自分で付ける方式です。この端末のブラウザに記録されます。</p></section>
+  <section class="toc-card" aria-labelledby="toc-title"><h2 id="toc-title">問題を選ぶ</h2>
+    <a href="#review">繰り返しの復習</a>
+    <a href="#q1"><span>01</span> 文章を5回表示</a>
+    <a href="#q2"><span>02</span> 1から10まで</a>
+    <a href="#q3"><span>03</span> サイコロを3回</a>
+    <div class="toc-divider"></div><a href="#goal">基本問題のゴール</a><a href="#q4"><span>04</span> サイコロチャレンジ</a>
+    <div class="toc-divider"></div><a href="#c1"><span>A</span> 成功回数を数える</a><a href="#c2"><span>B</span> 6が出るまで</a>
+    <div class="toc-divider"></div><a href="#help">困ったときは</a>
+  </section>
+</aside>
+</div>
+<footer class="site-footer"><p>Python｜コーディング自習課題</p><a href="https://nonakagw.github.io/python-lesson4-site/" target="_blank" rel="noopener noreferrer">授業資料にもどる ↑</a></footer>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
